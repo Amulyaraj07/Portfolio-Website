@@ -1,0 +1,376 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  background-color: rgb(0,0,33);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(18, 18, 62);
+}
+
+nav ul{
+  display: flex;
+  justify-content:center;
+   
+}
+
+nav ul li{
+  list-style: none;
+  margin:0 23px;
+
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+
+}
+
+nav ul li a:hover{
+  color: rgb(164, 164, 218);
+  font-size: 1.06rem;
+
+}
+
+main hr{
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 40px 84px;
+
+}
+.left{
+  font-size: 1.5em;
+}
+
+.firstSection{
+  display:flex;
+  justify-content: space-around;
+  margin: 80px 0;
+}
+
+.firstSection > div{
+  width:30% ;
+}
+
+.leftSection{
+  font-size: 3rem;
+}
+
+.rightSection img{
+  width: 80%;
+}
+
+.purple{
+  color: rgb(176, 113, 235);
+
+}
+.text-grey{
+  color: grey;
+}
+#element{
+  color: rgb(170, 107, 228);
+}
+
+.secondSection{
+  max-width: 80vw;
+  margin: auto;
+  height:80vh ;
+}
+
+.secondSection h1{
+  font-size: 1.9rem;
+}
+
+.secondSection .box{
+  background: white;
+  width: 95vw;
+  height: 2px;
+  margin: 56px 0;
+  display: flex;
+}
+
+.secondSection .vertical{
+  height: 93px;
+  width: 1px;
+  background: white;
+  margin: 0 140px;
+}
+
+.image-top{
+  position: relative;
+  width: 23px;
+  top: -32px;
+  left: -9px;
+}
+.vertical-title{
+  position: relative;
+  top: 75px;
+  width: 150px;
+}
+
+.vertical-desc{
+  position: relative;
+  top:86px;
+  color: grey;
+  width: 150px;
+  font-size: 9px;
+
+}
+
+footer{
+  background-color: rgb(18, 18, 62);
+  
+}
+.footer{
+  display: flex;
+  padding: 23px 122px;
+  justify-content: space-evenly;
+}
+
+.footer ul{
+  list-style: none;
+}
+
+.footer >div{
+  width: 223px;
+}
+
+footer .footer-rights{
+  text-align: center;
+  color: gray;
+  padding: 12px 0;
+
+}
+
+.thirdSection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 80vw;
+  margin: auto;
+  height:100vh ;
+}
+.thirdSection .uplistlist h3{
+  margin-bottom: 4px;
+  padding: 10px;
+}
+.thirdSection .uplistlist ul li{
+  padding: 3px;
+  list-style-type: square;
+}
+
+.uplistlist,.downlist{
+  width: 80% ;
+  margin-left: 270px;
+}
+
+section.project {
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid #ccc;
+}
+.fourthSection{
+  max-width: 80vw;
+  margin: auto;
+  height:100vh ;
+
+}
+
+.fifthSection{
+  max-width:80vw;
+  margin: auto;
+  height: 70vh;
+}
+
+
+
+  
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.contact-details,
+.message-form {
+  max-width: 400px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+i {
+  margin-right: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #7166e1;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1db4de;
+}
+
+.fifthSection{
+  display:flex;
+  justify-content: space-around;
+  margin: 80px 0;
+}
+
+.linkedinicon{
+  width: 15px;
+  height: 15px;
+}
+
+.fbicon{
+  width: 17px;
+  height: 17px;
+}
+
+.instaicon{
+  width: 15px;
+  height: 15px;
+}
+
+.whatsappicon{
+  width: 15px;
+  height: 15px;
+}
+
+.gmailicon{
+  width: 15px;
+  height: 15px;
+}
+
+.phoneicon{
+  width: 17px;
+  height: 17px;
+}
+
+
+/* For tablets */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .firstSection, .fifthSection {
+    flex-direction: column;
+  }
+
+  .firstSection > div, .fifthSection > div {
+    width: 90%;
+  }
+
+  .secondSection .box, .thirdSection .uplistlist, .secondSection .vertical, .downlist {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer > div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contact-details, .message-form {
+    max-width: 90%;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .leftSection {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  .secondSection, .thirdSection, .fourthSection, .fifthSection {
+    max-width: 95vw;
+  }
+
+  .secondSection h1, .thirdSection h1, .fourthSection h1, .fifthSection h1 {
+    font-size: 1.5rem;
+  }
+
+  .secondSection .box, .thirdSection .uplistlist, .downlist {
+    margin-left: 2.5vw;
+  }
+
+  .secondSection .vertical, .fourthSection .project {
+    margin: 20px 0;
+  }
+
+  .footer {
+    padding: 23px;
+  }
+
+  .thirdSection .uplistlist ul, .downlist ul {
+    padding: 0 15px;
+  }
+
+  .contact-section {
+    flex-direction: column;
+  }
+  
+  /* Adjust the font size and icon sizes on smaller screens */
+  .thirdSection h3, .fifthSection a, .footer-rights {
+    font-size: 0.8rem;
+  }
+
+  .linkedinicon, .fbicon, .instaicon, .whatsappicon, .gmailicon, .phoneicon {
+    width: 12px; /* Decrease the size of the icons */
+    height: 12px;
+  }
+}
